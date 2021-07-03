@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Final Project</title>
+    <style>
+      h1 {
+        text-align: center;
+        border: 1px solid #e39301;
+        border-radius: 6px;
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 20px;
+        margin: 10px;
+      }
+
+      h2 {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 20px;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 10px;
+      }
+
+      p {
+        text-align: center;
+        font-size: 15px;
+        font-family: Helvetica;
+        line-height: 150%;
+      }
+
+      em {
+        color: #e39301;
+      }
+
+      button {
+        display: block;
+        margin: 0 auto;
+        border: 1px;
+        border-radius: 6px;
+        background: #e39301;
+        padding: 10px;
+        font-size: 20px;
+        font-family: Helvetica;
+        color: white;
+        box-shadow: 5px 4px 4px #d7cfc4;
+      }
+
+      button:hover {
+        background: white;
+        color: #e39301;
+        transition: 200ms all ease-in-out;
+        cursor: pointer;
+      }
+      .read-more > a {
+        text-align: center;
+        display: block;
+        text-decoration: none;
+        color: #e39301;
+        font-size: 15px;
+      }
+
+      .read-more > a:hover {
+        text-decoration: underline;
+        color: #e39301;
+      }
+      .mango {
+        color: #e39301;
+      }
+
+      .container {
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 30px 40px;
+        border-radius: 15px;
+        background: radial-gradient(
+          905px at 4.9% 85.8%,
+          rgb(255, 243, 242) 0.1%,
+          rgb(255, 247, 220) 57.6%
+        );
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>I Love Popsicles</h1>
+      <h2>
+        Especially The <strong class="mango">Mango-Flavored</strong> Types
+      </h2>
+      <hr />
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/008/748/original/mango_yogurt.jpg?1620611653"
+        alt="mango popsicles"
+      />
+      <hr />
+      <p>
+        <em> An Ice Pop</em> is a water or milk-based frozen snack on a stick.
+        Unlike ice cream or sorbet, which are whipped while freezing to prevent
+        ice crystal formation, an ice pop is "quiescently" frozen—frozen while
+        at rest—and becomes a solid block of ice. The stick is used as a handle
+        to hold it.
+      </p>
+
+      <span class="read-more">
+        <a href="https://en.wikipedia.org/wiki/Ice_pop" target="_blank"
+          >Read more about Popsicles on Wikipedia</a
+        >
+      </span>
+      <br />
+      <p>
+        The Mango Popsicles are my summertime favorite; they are sweet and just
+        a bit tangy, and bursting with fresh mango flavor. And, these popsicles
+        are really easy to eat! Since these popsicles are mostly fruit, they
+        have a softer "bite-able" texture, rather than a hard and icy texture.
+        For me, however, the best part is that these popsicles can be made with
+        only three ingredients and ten minutes prep!
+      </p>
+      <button>🥭 Try Mango Popsicles</button>
+    </div>
+  </body>
+  <script>
+    function mangoPops() {
+      let name = prompt("What is your name?");
+      let number = prompt("How many popsicles can you handle?");
+      if (number > 3) {
+        alert("Well, " + name + "!!! Look at you go!");
+      } else {
+        alert(
+          "Have you tried the mango flavor yet, " +
+            name +
+            "? Promise you'll love it!"
+        );
+      }
+    }
+
+    let tryButton = document.querySelector("button");
+    tryButton.addEventListener("click", mangoPops);
+  </script>
+</html>
